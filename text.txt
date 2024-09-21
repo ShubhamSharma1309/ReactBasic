@@ -1,0 +1,24 @@
+REACT is a javascript library...
+
+WHY TO LEARN REACT?
+=> hype, job, trend, build UI.
+=> makes easy to manage & build complex frontend.
+
+WHEN SHOULD I LEARN REACT?
+=> After mastering JS
+=> most project don't need react at initial phase
+
+WHY REACT WAS CREATED?
+=> facebook mai ek problem the ghost message problem or phantom message problem toh isse bachne ke liye react banna tha...
+
+WHAT IS VITE?
+=> vite is a bundler 
+
+=> React khud ka apna DOM banata hai...
+=> index.html mai hum koi v script add nhi karte phir v index.js mai jo v js ka code likhte hai vo inject kaise hojata hai html code mai, toh isme package.json mai ek react script aata hai wahi sab kham karta hai...
+=> chahe hum vite se kham se yeh react se jab v component ka naam likhenge toh first letter capital rakhenge...
+=> virtual dom mai kya hota hai ki vo main dom ka track rakhta hai and apne dom se compare karta hai ,, jo v changes dekhte hai bass vo change karta hai ..
+   but DOM mai pura vo reload karta hai isi liye slow hota hai ...
+
+WHAT IS RECONCILIATION ?
+=> The algorithm React uses to diff one tree with another to determine which part need to be changed, RECONCILIATION is the algorithm behind what is populary understood as the "virtual DOM"...
