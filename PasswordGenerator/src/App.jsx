@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 
+// useCallback is a React Hook that lets you cache a function definition between re-renders.
+// useEffect is a React Hook that lets you synchronize a component with an external system...
 
 
 function App() {
@@ -26,8 +28,9 @@ function App() {
     setPassword(pass)
 
 
-  }, [length, numberAllowed, charAllowed, setPassword])
+  }, [length, numberAllowed, charAllowed, setPassword]) // yeha hum optimise ki baat kar rhe hai...
 
+  
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
@@ -36,7 +39,7 @@ function App() {
 
   useEffect(() => {
     passwordGenerator()
-  }, [length, numberAllowed, charAllowed, passwordGenerator])
+  }, [length, numberAllowed, charAllowed, passwordGenerator]) // yeha hum baat kar rhe hai ki agar isme se kisi mai v changes aaye tooh dubara se re-run karo...
   return (
     <div>
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
